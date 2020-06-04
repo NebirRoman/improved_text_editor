@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header first-header">
+            <div class="buttons">
+                <div class="btn html disabled">
+                    <img src="icons/code.svg" alt="">
+                </div>
+                <div class="btn bold">
+                    <img src="icons/bold.svg" alt="">
+                </div>
+                <div class="btn italic">
+                    <img src="icons/italic.svg" alt="">
+                </div>
+                <div class="btn underline">
+                    <img src="icons/underline.svg" alt="">
+                </div>
+                <div class="btn cross">
+                    <img src="icons/strikethrough.svg" alt="">
+                </div>
+                <div class="btn align-left active">
+                    <img src="icons/align-left.svg" alt="">
+                </div>
+                <div class="btn align-center">
+                    <img src="icons/align-center.svg" alt="">
+                </div>
+                <div class="btn align-right">
+                    <img src="icons/align-right.svg" alt="">
+                </div>
+                <div class="font-family">
+                    <div class="btn family">
+                        <img src="icons/font.svg" alt="">
+                    </div>
+                    <div class=" dropdown choose-family hidden">
+                        <div>Arial</div>
+                        <div>Georgia</div>
+                        <div>Impact</div>
+                        <div>Tahoma</div>
+                        <div class="active">Times New Roman</div>
+                        <div>Verdana</div>
+                    </div>
+                </div>
+                <div class="font-size">
+                    <div class="btn size">
+                        <img src="icons/text-height.svg" alt="">
+                    </div>
+                    <div class="dropdown choose-size hidden">
+                        <div>12px</div>
+                        <div>14px</div>
+                        <div class="active">16px</div>
+                        <div>18px</div>
+                        <div>20px</div>
+                        <div>22px</div>
+                        <div>25px</div>
+                        <div>30px</div>
+                    </div>
+                </div>
+                <div class="text-color">
+                    <div class="btn color">
+                        <img src="icons/palette.svg" alt="">
+                    </div>
+                    <div class="dialog dialog-color hidden">
+                        <div class="choose-color">
+                            <div class="dialog-title">Choose text color</div>
+                            <div class="close-btn">&#10006;</div>
+                            <div class="color-options"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="background-color">
+                    <div class="btn background">
+                        <img src="icons/image.svg" alt="">
+                    </div>
+                    <div class="dialog dialog-background hidden">
+                        <div class="choose-background">
+                            <div class="dialog-title">Choose background</div>
+                            <div class="close-btn">&#10006;</div>
+                            <div class="background-options">
+                                <div class="bg-colors active">Colors</div>
+                                <div class="bg-imgs">Images</div>
+                                <div class="bg-files">Files</div>
+                            </div>
+                            <div class="bg-color-options"></div>
+                            <div class="bg-img-options hidden"></div>
+                            <div class="bg-file-options hidden">
+                                <form>
+                                    <input type="file" class="file" name="" id="">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="btn signIn">
+                        <img src="icons/lock.svg" alt="">
+                    </div>
+                    <div class="dialog dialog-signIn hidden">
+                        <div class="signIn-block">
+                            <div class="dialog-title">Sign in</div>
+                            <div class="close-btn">&#10006;</div>
+                            <form class="signIn-form">
+                                <input type="text" class="login" placeholder="Login">
+                                <input type="password" class="password" placeholder="Password">
+                                <input type="button" value="Sign in" class="signIn-btn">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="dialog dialog-signOut hidden">
+                        <div class="signOut-block">
+                            <div class="cancel-btn">Cancel</div>
+                            <div class="signOut-btn">Sign out</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="main text">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, ipsam?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, ipsam?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, ipsam?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, ipsam?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, ipsam?</p>
+        </div>
+        <div class="header second-header hidden">
+            <div class="buttons">
+                <div class="btn save">
+                    <img src="icons/save.svg" alt="">
+                </div>
+                <div class="btn table">
+                    <img src="icons/table.svg" alt="">
+                </div>
+                <div class="dialog dialog-table hidden">
+                    <div class="table-block">
+                        <div class="dialog-title">Create table</div>
+                        <div class="close-btn">&#10006;</div>
+                        <form action="" class="table-form">
+                            <div class="left">
+                                <p>Count TR:</p>
+                                <input type="text" class="count-tr table-input">
+                                <p>Width of TD:</p>
+                                <input type="text" class="width-td table-input">
+                                <p>Width of border:</p>
+                                <input type="text" class="width-border table-input">
+                                <input type="button" value="Reset" class="reset-table">
+                            </div>
+                            <div class="right">
+                                <p>Count TD:</p>
+                                <input type="text" class="count-td table-input">
+                                <p>Height of TD:</p>
+                                <input type="text" class="height-td table-input">
+                                <div class="border">
+                                    <div>
+                                        <p>Style of border:</p>
+                                        <select class="style-border">
+                                            <option value="" selected disabled>choose style</option>
+                                            <option value="dotted">dotted</option>
+                                            <option value="dashed">dashed</option>
+                                            <option value="solid">solid</option>
+                                            <option value="double">double</option>
+                                            <option value="groove">groove</option>
+                                            <option value="ridge">ridge</option>
+                                            <option value="inset">inset</option>
+                                            <option value="outset">outset</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <p>Color of border:</p>
+                                        <select class="color-border">
+                                            <option value="" selected disabled>choose color</option>
+                                            <option value="black">black</option>
+                                            <option value="red">red</option>
+                                            <option value="green">green</option>
+                                            <option value="blue">blue</option>
+                                            <option value="yellow">yellow</option>
+                                            <option value="white">white</option>
+                                            <option value="gray">gray</option>
+                                            <option value="pink">pink</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <input type="button" value="Create" class="create-table">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="btn ol">
+                    <img src="icons/list-ol.svg" alt="">
+                </div>
+                <div class="dialog dialog-ol hidden">
+                    <div class="ol-block">
+                        <div class="dialog-title">Create OL</div>
+                        <div class="close-btn">&#10006;</div>
+                        <form class="ol-form">
+                            <p>Count li item</p>
+                            <input type="text" class="count-ol" placeholder="Type here...">
+                            <p>Type mark of list</p>
+                            <select class="ol-mark">
+                                <option value="" selected disabled>choose ol type mark</option>
+                                <option value="1">1</option>
+                                <option value="I">I</option>
+                                <option value="i">i</option>
+                                <option value="A">A</option>
+                                <option value="a">a</option>
+                            </select>
+                            <div class="list-btns">
+                                <input type="button" class="reset-ol" value="Reset">
+                                <input type="button" class="create-ol" value="Create list" >
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="btn ul">
+                    <img src="icons/list-ul.svg" alt="">
+                </div>
+                <div class="dialog dialog-ul hidden">
+                    <div class="ul-block">
+                        <div class="dialog-title">Create UL</div>
+                        <div class="close-btn">&#10006;</div>
+                        <form class="ul-form">
+                            <p>Count li item</p>
+                            <input type="text" class="count-ul" placeholder="Type here...">
+                            <p>Type mark of list</p>
+                            <select class="ul-mark">
+                                <option value="" selected disabled>choose UL type mark</option>
+                                <option value="circle">circle</option>
+                                <option value="disc">disc</option>
+                                <option value="square">square</option>
+                            </select>
+                            <div class="list-btns">
+                                <input type="button" class="reset-ul" value="Reset">
+                                <input type="button" class="create-ul" value="Create list" > 
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main code hidden">
+            <textarea name="" id="" class="text-area"></textarea>
+        </div>
+    </div>
+    <script src="script/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
